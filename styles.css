@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Default light background */
+  color: #000000; /* Default light text */
+}
+
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Dark text */
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+  background-color: #ffffff; /* Light mode input background */
+  color: #000000; /* Light mode input text */
+  border: 1px solid #cccccc; /* Light mode border */
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+input[readonly], textarea[disabled] {
+  background-color: #f9f9f9; /* Light mode disabled background */
+  color: #666666; /* Light mode disabled text */
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+  background-color: #1e1e1e; /* Dark mode input background */
+  color: #ffffff; /* Dark mode input text */
+  border: 1px solid #444444; /* Dark mode border */
+}
+
+body.dark-mode input[readonly], 
+body.dark-mode textarea[disabled] {
+  background-color: #2a2a2a; /* Dark mode disabled background */
+  color: #aaaaaa; /* Dark mode disabled text */
+}
+
+/* Button Styles */
+button {
+  background-color: #f0f0f0; /* Light mode button background */
+  color: #000000; /* Light mode button text */
+  border: 1px solid #cccccc; /* Light mode button border */
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0; /* Light mode button hover background */
+}
+
+body.dark-mode button {
+  background-color: #333333; /* Dark mode button background */
+  color: #ffffff; /* Dark mode button text */
+  border: 1px solid #555555; /* Dark mode button border */
+}
+
+body.dark-mode button:hover {
+  background-color: #444444; /* Dark mode button hover background */
+}
+
+/* Link Styles */
+a {
+  color: #0066cc; /* Light mode link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004999; /* Light mode link hover color */
+}
+
+body.dark-mode a {
+  color: #4a90e2; /* Dark mode link color */
+}
+
+body.dark-mode a:hover {
+  color: #8ab4f8; /* Dark mode link hover color */
+}
+
+/* Miscellaneous */
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+textarea#modMessage {
+  height: 100px;
+}
